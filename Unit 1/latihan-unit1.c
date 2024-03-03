@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-int main(){
+int s, t, v;
 
-    int s, t, v;
+int main(){
 
     printf ("Masukan jarak dan waktu : ");
     scanf ("%d %d", &s, &t);
