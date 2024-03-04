@@ -1,17 +1,24 @@
 #include <stdio.h>
 
-int  a;
-
-
 int main(){
+    int  a;
 
-printf ("Masukan jumlah array : ");
-scanf ("%d", &a);
+    printf ("Masukan jumlah array : ");
+    scanf ("%d", &a);
 
-int array [a];
+    int array [a];
 
-printf ("Masukan nilai : ");
-for (int i = 0; i < a; i++){
-    scanf("%d", &array[i]);
-}
+    printf ("Masukan nilai :\n");
+    for (int i = 0; i < a; i++){
+        scanf("%d", &array[i]);
+    }
+
+    int hasil = 0;
+    for (int i = 0; i < a; i++){
+        hasil = hasil + array[i];
+    }
+
+    printf ("Hasil penjumlahan array : %d", hasil);
+
+    return 0;
 }
